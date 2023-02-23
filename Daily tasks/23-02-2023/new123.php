@@ -1,4 +1,3 @@
-
 <?php
 $rows = 4;
 $spaces = $rows - 1;
@@ -7,7 +6,7 @@ $spaces = $rows - 1;
 for ($i = 1; $i <= $rows; $i++) {
     // Printing spaces
     for ($j = 1; $j <= $spaces; $j++) {
-        echo " ";
+        echo "  ";
     }
 
     // Printing numbers in increasing order
@@ -20,8 +19,8 @@ for ($i = 1; $i <= $rows; $i++) {
         echo ($j * 3) . " ";
     }
 
-    echo "<br>";
-    $spaces++;
+    echo "\n";
+    $spaces--;
 }
 
 $spaces = 1;
@@ -30,7 +29,7 @@ $spaces = 1;
 for ($i = $rows-1; $i >= 1; $i--) {
     // Printing spaces
     for ($j = 1; $j <= $spaces; $j++) {
-        echo " ";
+        echo "  ";
     }
 
     // Printing numbers in increasing order
@@ -43,7 +42,7 @@ for ($i = $rows-1; $i >= 1; $i--) {
         echo ($j * 3) . " ";
     }
 
-    echo "<br>";
+    echo "\n";
     $spaces++;
 }
 ?>
