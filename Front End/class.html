@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+</head>
+<body>
+    <h1>CLASS METHODS</h1>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+    <p id="8"></p>
+    <p id="9"></p>
+    <p id="4"></p>
+    <script>
+        class student{
+            constructor(name,place,IDnumber,tamil,english,maths,science,social){
+                this.name=name;
+                this.place=place;
+                this.IDnumber=IDnumber;
+                this.tamil=tamil;
+                this.english=english;
+                this.maths=maths;
+                this.science=science;
+                this.social=social;
+
+            }
+            submark(){
+return this.tamil+this.english+this.maths+this.science+this.social;
+            }
+        }
+        const std12=new student("vijay","kurinjipadi",856,99,100,09,98,97);
+        document.getElementById("1").innerHTML="NAME:"+std12.name;
+        document.getElementById("2").innerHTML="PLACE:"+std12.place;
+        document.getElementById("3").innerHTML="ID NUMBER:"+std12.IDnumber;
+        document.getElementById("5").innerHTML="TAMIL:"+std12.tamil;
+        document.getElementById("6").innerHTML="ENGLISH:"+std12.english;
+        document.getElementById("7").innerHTML="MATHS:"+std12.maths;
+        document.getElementById("8").innerHTML="SCIENCE:"+std12.science;
+        document.getElementById("9").innerHTML="SOCIAL:"+std12.social;
+        document.getElementById("4").innerHTML="TOTAL MARK :"+std12.submark();
+        </script>
+
+<BUTTon type="button"  style="background-color:rgb(166, 224, 235);" onclick=" this.style.display='None'">CLICK TO HIDE BUTTON</BUTTon>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <STYLE>
+        @media (min-width: 21em) {
+            body {
+                text-align: center;
+            }
+
+            button {
+                border-radius: 15px;
+                padding: 1rem;
+                background-color: hsl(0deg, 0%, 8%);
+                color: hsl(0deg, 0%, 98%);
+            }
+
+            h1 {
+                font-weight: 700;
+            }
+
+            p {
+                color: hsl(0deg, 0%, 41%);
+            }
+
+            span {
+                color: rgb(202, 96, 96);
+            }
+
+            /*classes*/
+            .attribution-a {
+                color: rgb(243, 96, 96);
+            }
+
+            .attribution {
+                font-size: 11px;
+            }
+
+            .hero-paragraph {
+                color: hsl(0deg, 0%, 41%);
+                width: 90%;
+            }
+
+            .attribution,
+            .g-div,
+            .partner-brands {
+                margin: 2rem 0 0;
+            }
+
+            .h-img {
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: hsl(0deg, 0%, 41%);
+            }
+
+            .further button {
+                margin-left: 1.125rem;
+                background-color: hsl(0deg, 0%, 98%);
+                color: hsl(0deg, 0%, 8%);
+                transition: 1s;
+            }
+
+            .further button:hover {
+                background-color: hsl(0deg, 0%, 8%);
+                color: hsl(0deg, 0%, 98%);
+            }
+
+            .image-and-p {
+                display: flex;
+                align-items: center;
+            }
+
+            .image-and-p img {
+                margin: 0.2rem 0.5rem 0 0;
+                float: left;
+            }
+
+            .partner-brands {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .shift {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+
+        @media (min-width: 38rem) {
+
+            /*Global classes*/
+            body {
+                text-align: left;
+            }
+
+            /*Grid*/
+            .gg-div {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                margin: 2rem 0 0 5rem;
+            }
+
+            .g-div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .hero-img {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+
+            .further {
+                margin: 0 auto;
+            }
+
+            .nav-p {
+                margin: 0 1rem 0;
+            }
+
+            .p-b {
+                margin: 0 0.5rem 0;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-nav .nav-link {
+                margin: auto;
+            }
+
+            .further {
+                display: flex;
+                align-items: center;
+                align-items: center;
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                margin-left: 2rem;
+            }
+        }
+
+       
+    </STYLE>
+    <title>NAVBAR</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="image-and-p">
+                                <a class="dropdown-item" href="#">
+                                    <p>Todo list</p>
+                                </a>
+                            </li>
+
+                            <li class="image-and-p">
+                                <a class="dropdown-item" href="#">
+                                    <p>Calender</p>
+                                </a>
+                            </li>
+
+                            <li class="image-and-p">
+                                <a class="dropdown-item" href="#">
+                                    <p>Reminder</p>
+                                </a>
+                            </li>
+
+                            <li class="image-and-p">
+                                <a class="dropdown-item" href="#">
+                                    <p>Planning</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">History</a></li>
+                            <li><a class="dropdown-item" href="#">Our Team</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Careers</a>
+                    <a class="nav-link" href="#">
+                        <div class="further">
+                            <a href="">Login</a>
+                            <button>join as professional</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="gg-div">
+        <div class="hero-img">
+            <img class="h-img"
+                src="https://images.pexels.com/photos/3771055/pexels-photo-3771055.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+        <div class="g-div">
+            <h1> Done with professional</h1>
+            <p class="hero-paragraph">
+                Home professional services refer to a range of services provided by skilled and licensed professionals for the maintenance, repair, and improvement of homes. These services can include plumbing, electrical, HVAC, carpentry, painting, roofing, landscaping, and more. The goal of home professional services is to help homeowners maintain the value and functionality of their homes, as well as to improve their comfort and quality of life. Home professional services can be contracted for one-time projects or on an ongoing basis, depending on the homeowner's needs and preferences. It is important to choose reputable and experienced professionals to ensure high-quality work and customer satisfaction.
+            </p>
+
+
+            
+            
+            <footer>
+                <p>Copyright &copy; 2023  Company</p>
+            </footer>
+
+
+         
+           
+</body>
+
+</html>

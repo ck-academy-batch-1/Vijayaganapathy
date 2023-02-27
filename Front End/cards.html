@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>/* Import font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #090909;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        
+        /* General styles end */
+        .card1 {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            outline: 2px solid rgb(126 255 178 /25%);
+            outline-offset: -10px;
+            overflow: hidden;
+            isolation: isolate;
+            border-radius: 20px;
+            flex: 0 0 auto;
+  width: 200px;
+  margin-right: 1rem;
+
+        }
+        
+        .card__img1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .25s;
+            z-index: -1;
+        }
+        
+        .card1:hover .card__img1 {
+            transform: scale(1.5);
+        }
+        .card1-deck {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.card3 {
+  width: 150px;
+  height: 200px;
+  background: 
+    url('./1675815846339.jpg')
+    center no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transform: 
+    rotate(20deg)
+    skew(-10deg, -5deg);
+  transition: 
+    translate 0.25s,
+    box-shadow 0.25s;
+}
+.card3:hover {
+  translate: 0 -30px;
+  box-shadow: 
+    5px 3px rgb(217 220 242 / 75%),
+    10px 6px rgb(44 217 255 / 50%),
+    15px 9px rgb(126 255 178 / 25%);
+}
+.loader-wrapper {
+    width: 50px;
+    height: 50px;
+}
+.loader {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #162534;
+    border-top-color: #2CD9FF;
+    border-bottom-color: #7EFFB2;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+.loader--inner {
+    border-top-color: #7EFFB2;
+    border-bottom-color: #2CD9FF;
+    animation-duration: 2.5s;
+}
+@keyframes rotate {
+    0% {
+        transform: scale(1) rotate(360deg);
+    }
+    50% {
+        transform: scale(.8) rotate(-360deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+  /* General styles end */
+</style>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader loader--inner"></div>
+        </div>
+    </div>
+    <div class="card1-deck" >
+    <div class="card1">
+        <img src="https://images.pexels.com/photos/3992134/pexels-photo-3992134.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card__img1">
+    </div><br>
+    <div class="card1">
+        <img src="https://images.pexels.com/photos/4588056/pexels-photo-4588056.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card__img1">
+    </div><br>
+    <div class="card1">
+        <img src="https://images.pexels.com/photos/2067438/pexels-photo-2067438.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card__img1">
+    </div><br>
+    <div class="card1">
+        <img src="https://images.pexels.com/photos/6897346/pexels-photo-6897346.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card__img1">
+    </div><br>
+    <div class="card1">
+        <img src="https://images.pexels.com/photos/953075/pexels-photo-953075.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card__img1">
+    </div><br>
+
+</div>
+<div class="card3"></div>
+</body>
+</html>

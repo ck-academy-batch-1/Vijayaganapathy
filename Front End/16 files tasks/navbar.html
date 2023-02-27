@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navbars</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style> 
+  nav{
+    background-color: rgb(90, 156, 153);
+    margin:20px;
+
+  }
+  .dropdown-item{
+    background-color: rgb(255, 255, 255);
+  }
+</style>
+
+</head>
+<body>
+  <nav class="navbar expand-sm " padding="10px">
+    <a class="navbar-brand" href="refresh">
+      <img src="./logol.PNG" width="auto" alt="logo" class="img-rounded.circle">
+    </a> 
+       
+    <ul class="navbar nav" style="padding:0px" ;>
+      <li class="nav-item dropdown">
+        <a class="nav-link btn text-block fa fa-sort-down dropdown-toggle" data-toggle="dropdown">Services</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item nav-link btn">plummer</a>
+          <a class="dropdown-item nav-link btn">electrician</a>
+          <a class="dropdown-item nav-link btn">carpenter</a>
+          <a class="dropdown-item nav-link btn">engineer</a>
+
+
+        </div>
+      </li>
+      <li class="nav-item dropdown ">
+
+        <a class="nav-link  btn text-block dropdown-toggle" data-toggle="dropdown"><b>Company</b></a>
+        <div class="dropdown-menu">
+          <a class="nav-link dropdown-item btn">
+            models
+          </a>
+          <a class="nav-link dropdown-item btn">
+            new arrivals
+          </a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+
+        <a class="nav-link btn btn-group text-block fa fa-sort-down dropdown-toggle" data-toggle="dropdown" >About us </a>
+        <div class="dropdown-menu">
+          <a class="nav-link dropdown-item btn">
+            updates
+          </a>
+          <a class="nav-link dropdown-item btn" href="login.html">
+           Awards
+          </a>
+        </div>
+      <li class="nav-item dropdown">
+        <a class="nav-link btn  btn btn-rounded btn-bg-primary text-block  dropdown-toggle " data-toggle="dropdown"><b>join as professional</b></a>
+        <div class="dropdown-menu">
+          <a class="nav-link dropdown-item btn">
+            sign-up
+          </a>
+          <a class="nav-link dropdown-item btn" href="login.html">
+            log-in
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

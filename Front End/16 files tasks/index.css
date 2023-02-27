@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Archivo+Black&family=Mukta+Vaani:wght@300&family=Nixie+One&family=Pacifico&family=Poppins:wght@100&family=Quicksand:wght@300&family=Signika+Negative:wght@300;400&family=Signika:wght@300&family=Updock&display=swap');
+
+/* font-family: Poppins;
+color: #333333; //Black text
+color: #2D9CDB; //Blue
+color: #27AE60; //Green
+color: #EB5757; //Red
+color: #100E1D //Footer color */
+
+
+
+html{
+  scroll-behavior: smooth;
+
+}
+.topnav {
+    height: 3rem;
+    margin-left: 35%;
+    
+  }
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 17px; 
+    margin-left: 50px;
+    float: right;
+    
+  } 
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;   
+    grid-column: 1/-1;
+  }
+  .main_sec{
+     /* margin-left: 100px;
+     margin-right: 70px; */
+     padding: 20px;
+     overflow: hidden;
+     margin: 50px;
+     font-weight: 1000;
+   
+  }
+  .image img{
+    border-radius: 20px;
+    width: 100%;
+  }
+  .head{
+    margin-left: 100px;
+    width: 30%;
+   
+  }
+  .head h2{
+    font-weight: 600px;
+    font-size: 40px;
+    grid-column: 1/-1;
+   
+  }
+ 
+.input {
+  min-height: 50px;
+  width: 300px;
+  padding: 0 1rem;
+  color: #fff;
+  background-color: rgb(216, 211, 211);
+  font-size: 15px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+
+}
+.button--join a {
+  min-height: 40px;
+  padding: .3em ;
+  border: none;
+  max-width: 60px;
+  border-radius: 6px ;
+  background-color: #6955e9;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  outline: none;
+  position: absolute;
+  margin-left: -35px;
+  
+}
+
+.button_submit:hover {
+  background-color: #5e5dcd;
+}
+.my_services{
+     display: flex; 
+     position: relative;
+     grid-template-rows: auto 1fr;
+    grid-template-columns: auto ; 
+}
+ .box{
+  font-weight: bolder;
+  text-align: start;
+  /* width: 30%; */
+  /* margin-top: 300px; */
+  align-items: center;  background-color: #fffefe;
+  margin: 30px;
+  padding: 30px;
+  display: grid;
+    /* position: relative; */
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+}
+.box .button a{
+  text-decoration: none;
+  color: #100E1D;
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: bolder;
+
+} 
+.box .button{
+  margin-top: 30px;
+
+}
+.input-group{
+  display: flex;
+  padding: 38px;
+}
+.input-group .btn{
+  padding: 18px;
+  background-color: #5e5dcd;
+  border-radius: 15px;
+  position: absolute;
+  margin-left: 300px;
+  color: #fff;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+}
+.end{
+  margin-top: -20%;
+  font-weight: 600;
+}
+ .dashboard{
+  display: flex;
+  grid-gap: 15px;
+  margin-left: 70px;
+
+ }
+
+.dash2{
+  display: flex;
+  margin-left: 70px;
+  grid-gap: 15px;
+  font-weight: 800;
+  
+}
+.gallery {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+  margin-left: 43%;
+  margin-top: -160px;
+  display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+}
+.first img{
+  border-radius: 30px;
+}
+.sec img{
+  border-radius: 30px;
+
+}
+.container2{
+ justify-content: space-evenly;
+ margin-top: 100px;
+   
+} 
+.offer{
+  font-weight: 600;
+  margin-top: 40px;
+
+}
+.container3{
+  display: flex;
+  margin-top: 50px;
+  width: 100%; 
+}
+.section_end{
+  display: flex;
+}
+.decorate{
+  display: flex;
+  position: relative;
+
+}
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  background-color:#100E1D;
+  color: #fff;
+  font-size: 18px;
+  width:100%;
+  padding: 50px;
+  height: 15vh;
+  margin-top: 40px;
+  
+}
+.bottom-nav{
+  margin-left: -270px;
+ 
+}
+ .bottom-nav li a{
+  text-decoration: none;
+  color: #fff;
+} 
+.bottom-nav li{
+  list-style-type: none; 
+}
+.media{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  
+}
+.media i{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+

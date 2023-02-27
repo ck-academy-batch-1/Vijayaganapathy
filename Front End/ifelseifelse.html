@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF,ELSEIF,ELSE,SWITCH</title>
+</head>
+<body style="background-image:url(./jeshoots-com-sMKUYIasyDM-unsplash.jpg ) ">
+    
+    <P>IF ,ELSE IF,ELSE </P>
+
+
+  <div id="vijay"></div><br><br><br>
+  <div id="vijay1"></div><br><br><br>
+  <div id="vijay2"></div><br><br><br>
+  <div id="vijay3"></div>
+  <div id="vijay4"></div>
+ 
+  <script>
+    let x=2
+    let A=x;
+if(A<=10)
+{
+    text="GOOD MORING";
+}
+else
+{
+    text="GOOD NIGTH";
+}
+document.getElementById("vijay").innerHTML=text;
+  </script>
+  <br><br><br><br>
+
+  <script>
+    let A1=2
+if(A1<=10)
+{
+    text=window.alert("GOOD MORNIG");
+}
+else if(A1>=10 & A1<=15)
+{
+    text=alert("GOOD AFTERNOON");
+}
+else
+{
+    text="GOOD NIGTH";
+}
+document.getElementById("vijay1").innerHTML=text;
+  </script>
+    <script>
+        let x2=23
+        let A2=x2;
+    if(A2<=10)
+    {
+        text="GOOD MORING";
+    }
+    else if(A2>=10)
+    {
+        text=window.confirm("GOOD AFTERNOON");
+    }
+    else
+    {
+        text ="GOOD NIGHT"
+    }
+    document.getElementById("vijay2").innerHTML=text;
+      </script>
+
+
+<h1>switch</h1>
+    
+<P ID="1"></P>
+<script>
+    var a=20,b=40,c;
+    var c=window.prompt("ADD 20+40=","60");
+    switch(c)
+    {     
+ case "60":
+text="ANSWER IS CRT";
+break;
+ case "50":
+    text="ANSWER is wrong";
+    break;
+    default :
+    text="YOUR ADDISION IS WRONG";
+}
+    document.getElementById("1").innerHTML=text;
+
+</script>
+</body>
+</html>

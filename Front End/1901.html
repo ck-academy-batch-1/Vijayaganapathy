@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-column-gap: 20px; 
+}
+
+
+#left-column {
+  grid-column: 1 / 2
+}
+
+/* style for the right column */
+#right-column {
+  grid-column: 2 / 3; /* span the right column */
+}
+body {
+  font-family: Arial, sans-serif; /* change the font */
+  background-color: #ffffff; /* add a background color */
+  
+}
+
+h1 {
+  text-align: center; /* center the text */
+  color: #000000; /* change the text color */
+}
+
+.button {
+  background-color: #050505; 
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;   /* add rounded edges to the button */
+}
+.container {
+width: 90%;
+margin: 0 auto;
+}
+
+
+
+      </style>
+</head>
+<body>
+    <body class="container">
+        <div id="left-column">
+          <H1>        MULTIPLICATION TABLE  </H1>
+          <p>Enter the number to create table: <input type="text" id="num"></p>
+          <button class="button" onclick="createTable()">Create Table</button>
+          <p id="table"></p>
+        </div>
+        <div id="right-column">
+          <h1> PRIME NUMBER FINDER</h1>
+          <PRE>
+    
+            <p> USE THIS NUMBERS TO GET PRIME NUMBER :
+                10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+                20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+                30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+                40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
+                50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+                60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+                70, 71, 72, 73, 74, 75, 76, 77, 78, 79,
+                80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+                90, 91, 92, 93, 94, 95, 96, 97, 98, 99,
+                100.</p>
+            </PRE>
+          <p>Enter the numbers with commas: <input type="text" id="nums"></p>
+          
+          <button class="button" onclick="findPrimes()">Find Prime Numbers</button>
+          <p id="primes"></p>
+        </div>
+      </body>
+      
+      
+
+<script>
+function findPrimes() {
+  var nums = document.getElementById("nums").value.split(",");
+  var primes = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (isPrime(nums[i])) {
+      primes.push(nums[i]);
+    }
+  }
+  document.getElementById("primes").innerHTML = "Prime numbers: " + primes.join(", ");
+}
+
+function isPrime(n) {
+  if (n <= 1) {
+    return false;
+  }
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+</script>
+<script>
+    function createTable() {
+      var num = document.getElementById("num").value;
+      var table = "";
+      for (let i = 1; i <= 20; i++) {
+        table += num + " x " + i + " = " + (num * i) + "<br>";
+      }
+      document.getElementById("table").innerHTML = table;
+    }
+    </script>
+</body>
+</html>

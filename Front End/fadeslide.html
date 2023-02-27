@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>fade and slide</title>
+    <style>
+       div{
+margin: 30px;;
+width:fit-content ;
+padding: 30px; 
+display: none;
+background-image: url(./Capture.PNG);
+background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color:rgb(103, 59, 153);
+        }
+    </style>
+</head>
+<body>
+    <h1>FADE AND SLIDE</h1>
+
+
+<H1 id="1">FADE </H1>
+
+<BUTton class="2">FADE OUT</BUTton>
+<BUTton class="1">FADEIN</BUTton>
+<BUTton class="3">FADE TO</BUTton>
+<BUTton class="4">FADE TOGGLE</BUTton>
+
+
+
+<h1>SLIDE</h1>
+
+<h1 style="border: 1px;"><span id="up">click to  BUTTONS slide up     </span><span id="down">slide down     </span><span id="toggle">  slide toggel</span></h1></BR></BR>
+<BUTton class="7">SLIDE OUT</BUTton>
+<BUTton class="6">SLIDE UP</BUTton>
+<BUTton class="8">SLIDE TOGGLE</BUTton>
+<div id="3">
+<ul>
+   
+    <li>games</li>
+    <li>movies</li>
+    <li>school</li>
+    <li>college</li>
+    <li>wonder women</li>
+
+</ul>
+</div>
+<script>
+$(document).ready(function(){
+    $(".6").click(function(){
+        $("#3").slideUp();
+    });
+});
+$(document).ready(function(){
+    $(".7").click(function(){
+        $("#3").slideDown();
+    });
+});
+$(document).ready(function(){
+    $(".8").click(function(){
+        $("#3").slideToggle();
+    });
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".1").click(function(){
+            $("#1").fadeIn();
+        });
+    });
+
+    $(document).ready(function(){
+        $(".2").click(function(){
+            $("#1").fadeOut();
+        });
+    });
+    
+    $(document).ready(function(){
+        $(".3").click(function(){
+            $("#1").fadeTo("slow",0.5);
+        });
+    });
+    
+    $(document).ready(function(){
+        $(".4").click(function(){
+            $("#1").fadeToggle();
+        });
+    });
+</script>
+</body>
+</html>

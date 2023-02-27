@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    #container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        
+        background-color: rgb(136, 137, 230);
+    }
+</style>   <title>Question with Radio Buttons</title>
+</head>
+<body id="container">
+    <h1>    MULTIPLE CHOICE QUESTION </h1>
+    <H5>Answer all questions:</H5>
+    <form>
+        <label>What is MY Name?</label><br>
+        <input type="radio" name="question1" id="VIJAY" value="VIJAY">VIJAYAGANAPATHY J<br>
+        <input type="radio" name="question1" id="AJAY" value="AJAY">AJAY<br>
+        <input type="radio" name="question1" id="PRIYA" value="PRIYA">PRIYA<br>
+        <input type="radio" name="question1" id="GANAPATHY" value="GANAPATHY">GANAPATHY<br>
+      
+        <label>which subject your learning?</label><br>
+        <input type="radio" name="question2" id="HTML" value="HTML">HTML<br>
+        <input type="radio" name="question2" id="CSS" value="CSS">CSS<br>
+        <input type="radio" name="question2" id="JAVASCRIPT" value="JAVASCRIPT">JAVASCRIPT<br>
+        <input type="radio" name="question2" id="PHP" value="PHP">PHP<br>
+      
+        <label>What is your dream place?</label><br>
+        <input type="radio" name="question3" id="USA" value="USA">USA<br>
+        <input type="radio" name="question3" id="GOA" value="GOA">GOA<br>
+        <input type="radio" name="question3" id="MALDIVES" value="MALDIVES">MALDIVES<br>
+        <input type="radio" name="question3" id="THAILAND" value="THAILAND">THAILAND<br>
+        <br>
+        <button type="button" onclick="checkAnswers()">Submit</button> <br>
+    </form>
+    <script>
+      function checkAnswers() {
+        var score = 0;
+        if (document.getElementById("VIJAY").checked) {
+          score++;
+        }
+        if (document.getElementById("JAVASCRIPT").checked) {
+          score++;
+        }
+        if (document.getElementById("USA").checked) {
+          score++;
+        }
+       
+        alert("You scored " + score + " out of 3!");
+    
+      }
+    </script>
+</body>
+</html>

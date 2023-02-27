@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTTON</title>
+    <link rel="icon" href="https://img.icons8.com/external-flat-icons-inmotus-design/67/null/external-List-round-mobile-ui-set-flat-icons-inmotus-design.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<STYle> 
+
+
+      .button-49{
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        background-color: rgb(233, 102, 200);
+        animation: rotatehue 2s alternate infinite;
+      
+      }@keyframes rotatehue{
+    to{
+      filter: hue-rotate(1turn);
+    }
+  }
+
+  h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#list {
+  margin-top: 20px;
+  text-align: left;
+}
+</style>
+</STYle>
+  </head>
+<body style="background-image: url(https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=600); background-repeat: no-repeat; background-size: cover;">
+
+    <h1 class="text-center display-3 mb-5" >BUTTOBS</h1>
+
+<div class="container " style="background-color: #fff; border: 1px solid #000; padding: 20px;">
+  <h2 class="text-center mb-5">Different Types of BUTTONS</h2>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <h3 class="mb-3">External Link</h3>
+      <p>
+        <a class="btn btn-primary btn-block" href="https://www.example.com">Visit Example.com</a>
+      </p>
+    </div>
+
+    <div class="col-md-4">
+      <h3 class="mb-3">Email Link</h3>
+      <p>
+        <a class="btn btn-primary btn-block" href="mailto:VIJAYAGANAPATHY2356@OUTLOOK.COM">Send an email to info@example.com</a>
+      </p>
+    </div>
+
+    <div class="col-md-4">
+      <h3 class="mb-3">Phone Link</h3>
+      <p>
+        <a class="btn btn-primary btn-block" href="tel:+918270222953">Call +91827022953</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h3 class="mb-3">Local File Link</h3>
+      <p>
+        <a class="btn btn-primary btn-block" href="">Open a local Capture file</a>
+      </p>
+    </div>
+
+    <div class="col-md-4">
+      <h3 class="mb-3">Anchor Link</h3>
+      <p>
+        <a class="btn btn-primary btn-block" href="./listandlink.html">Go to Section 2</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<h1 class="text-center display-3 mb-5">LIST</h1>
+
+<div class="container" style="background-color: #fff; border: 1px solid #000; padding: 20px;">
+  <h2 class="text-center mb-5">Enter Data to Add to List</h2>
+  <button class="button-49" onclick="addToList()">Add to List</button>
+  <br><br>
+  <ul class="list-group" id="list"></ul>
+</div>
+      <br><br>
+      <ul id="list"></ul>
+  
+      <script>
+        function addToList() {
+          var item = prompt("Enter an item to add to the list:");
+          if (item) {
+            var list = document.getElementById("list");
+            var newItem = document.createElement("li");
+            newItem.innerHTML = item;
+            list.appendChild(newItem);
+          }
+        }
+        
+      </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+</head>
+<body onload="load()">
+    <h1>Data Type In JS</h1>
+    <p id="vij"></p>
+    <p id="vi"></p>
+    
+    <script>
+        const std={
+            name:"vijay",
+            age:22,
+            city:"kurinjipadi",
+            place:"cuddalore",
+            address: function(){return this.place  +" "+ this.city}
+        };
+        document.getElementById("vij").innerHTML=std.place;
+        document.getElementById("vi").innerHTML=std.address();
+       
+    </script>
+    <pre>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <P ID="5"></P>
+    <script>
+        function load(){
+       alert('plz wait while page load');
+        }
+    </script>
+   
+    <button onclick='document.getElementById("1").innerHTML="welcome to webpage onclick"'>click me</button><br><br><br>
+    <button onmouseover='document.getElementById("2").innerHTML="welcome to webpage mouseover"'>click me</button><br><br><br>
+    <button onkeydown='document.getElementById("3").innerHTML="welcome to webpage onkeydown"'>click me</button><br><br><br>
+    <button onmouseout='document.getElementById("5").innerHTML="welcome to webpage mouseout"'>click me</button><br><br><br>
+    
+    
+    </pre>
+    <p  id="9" ></p>
+    <select id="4" onchange="load1()" >
+      
+        
+        <option value="BCA">BCA</option>
+        <option value="MCA">MCA</option>
+        <option value="BSC">BCS</option>
+        <option value="MSC">MSC</option>
+
+    </select>
+
+    
+    
+
+    
+    <script>
+
+        function load1() {
+      var x = document.getElementById("4").value;
+      document.getElementById("9").innerHTML= " you selected "+ x;
+        }
+    </script>
+</body>
+</html>
