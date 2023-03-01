@@ -18,7 +18,7 @@
     </style>
 </head>
 
-<body style="background-image:url(https://images.pexels.com/photos/5905441/pexels-photo-5905441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); background-size: cover; background-repeat:no-repeat;">
+<body style="background-image:url(http://www.justinmaller.com/img/projects/wallpaper/WP_RichSoil-1440x900_00088.jpg); background-size: cover; background-repeat:no-repeat;">
  
 <div class=container >
 
