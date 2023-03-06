@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAKE ON INPUT</title>
+    <style>
+
+        input:invalid{
+            border: 2px solid blue;
+            animation:shake 0.2s 2;
+
+        }
+        @keyframes shake {
+            25%{
+                translate: 6px 0;
+            }
+            50%{
+                translate: -6px 0; 
+            }
+            75%{
+                translate: 6% 0;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>SHAKE ON INPUT</h1><INPUt type="text" placeholder="Enter Name" pattern="[a-z]*"></INPUt>
+</body>
+</html>
