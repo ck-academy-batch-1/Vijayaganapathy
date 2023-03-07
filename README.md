@@ -1,13 +1,13 @@
-# vijayaganapathy
+# VIJAYAGANAPATHY
 
 
 
-Hello there! 👋🏻 I am vijayaganapathy! 
-I am VIJAYAGANAPATHY  🙋🏻‍♂️, a Cook, Cat Lover, Front End , Web Developer.
+Hello there! 👋🏻 I am VIJAYAGANAPATHY! 
+I am vijayaganapathy   🙋🏻‍♂️, a Cook, Cat Lover, Front End , Web Developer.
 
 
-![image](https://user-images.githubusercontent.com/122540598/223361042-c8914d5d-c8b5-4e65-a3c9-3ca294e6c106.png) :https://github.com/Vijayaganapathyarulanbu
-
+![image](https://img.icons8.com/material/24/null/github.png) :https://github.com/Vijayaganapathyarulanbu
+![image](https://img.icons8.com/sf-ultralight/25/null/instagram-new.png):https://www.instagram.com/vijayaganapathy_j/ 
 
 Dino 🦖
 Dino
