@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discount finder</title>
+</head>
+<body>
+    <form action="">
+
+        <label for="">ENTER PRODUCT MRP</label>
+        <INPUT type="text" id="MRP"></INPUT>
+        <br>
+        <label for="">HOW MANY %YOU HAVE</label>
+        <INPut type="TEXT" id="%"></INPut:text>
+        </label>
+        <button type="submit" onclick="discount()"> SUBMIT</button>
+    </form>
+    <p id="finalprize"></p>
+    <SCRipt>
+function discount(){
+    const MRP=document.getElementById("MRP").value;
+    const per=document.getElementById("%").value;
+    if(MRP<=0 || per<=0|| per>=00 ){
+        const finalpriz1=MRP*(1-per/100);
+        document.getElementById("finalprize").innerHTML = "Discounted Price: " + finalpriz1.toFixed();
+  
+    }
+}
+
+    </SCRipt>
+</body>
+</html>
