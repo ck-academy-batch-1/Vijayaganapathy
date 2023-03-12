@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monday task</title>
+</head>
+<body>
+    <form action="">
+        <label for="">ENTER YOUR TOTAL MARK</label>
+        <INPUt type="text" id="totalmark" >
+     <button type="submit" >submit</button>
+
+     <p></p>
+    </form>
+
+    <BR></BR>
+    <p id="grade"></p>
+    <P id="per"></P>
+    
+    <script>
+    document.querySelector('form').addEventListener('submit', (event) => {
+        event.preventDefault(); // prevent the form from submitting
+        
+        let score = document.getElementById('totalmark').value;
+        let grade = document.getElementById('grade');
+        let per1 = (score / 100) * 100; 
+        
+        if (score >= 90){
+            grade.textContent = 'YOUR GRADE IS "A"';
+        }
+        else if (score >= 80){
+            grade.textContent = 'YOUR GRADE IS "B"';
+        }
+        else if (score >= 70){
+            grade.textContent = 'YOUR GRADE IS "D"';
+        }
+        else if (score >= 60){
+            grade.textContent = 'YOUR GRADE IS "E"';
+        }
+        else if (score >= 50){
+            grade.textContent = 'YOUR GRADE IS "F"';
+        }
+        else if (score >= 40){
+            grade.textContent = 'YOUR GRADE IS "G"';
+        }
+        else if (score >= 30){
+            grade.textContent = 'RUN FOR YOUR LIFE';
+        }
+        else{
+            grade.textContent = 'You already died';
+        }
+    });
+
+   
+        
+        per.textContent = `Your percentage is: ${per1}%`;
+    </script>
+      
+      <script>
+        document.querySelector('form').addEventListener('submit', (event) => {
+            event.preventDefault(); // prevent the form from submitting
+            
+            let score = document.getElementById('totalmark').value;
+            let grade = document.getElementById('grade');
+            
+            let percentage = (score *6) /100; // calculate percentage
+            
+            per.textContent = `Your percentage is: ${percentage}%`;
+        });
+        </script>
+</body>
+</html>
