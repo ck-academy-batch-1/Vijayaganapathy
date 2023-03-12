@@ -221,7 +221,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      
 
         // Function to sanitize input data
-        function test_input($data)
         {
             $data = trim($data);
             $data = stripslashes($data);
