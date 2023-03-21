@@ -9,4 +9,4 @@ $smallmsg= new smallmsg();
 $smallmsg ->bye();
 
 
-?>
+?> 

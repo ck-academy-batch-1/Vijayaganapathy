@@ -8,7 +8,7 @@ class newsubj {
         $this->SUB1 = $S1;
         $this->SUB2 = $S2;
     }
-}
+} 
 
 class learn extends newsubj {
     public function subjectname () {

@@ -25,7 +25,7 @@ class  sub1 {
 }
 
 class  sub2 {
-    use use_me;
+    use use_me; 
 
     public function sub2 () {
         echo "sun1 name is $this->sub1 <br> sub2 name is  $this->sub2 </h3><br>";

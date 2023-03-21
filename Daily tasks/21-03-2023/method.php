@@ -13,7 +13,7 @@ class learn {
         echo "my sonjoined in " .$this->cour."<br>";
         echo "iam learning sub is ".$this->subje;
 
-    }
+    } 
 }
 
 $my_learn = new learn("PHP", "JAVA");
