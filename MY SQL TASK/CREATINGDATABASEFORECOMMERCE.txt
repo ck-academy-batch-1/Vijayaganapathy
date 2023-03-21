@@ -1,0 +1,332 @@
+                                                 CREATING DATABASE FOR CKECOMMERCE TASK
+
+
+
+CREATE DATABASE ckecommerce;
+
+###database created
+
+		
+CREATE TABLE category(
+    categoryid INTEGER AUTO_INCREMENT,
+    categoryname VARCHAR(500),
+    categorydescription VARCHAR(100), 
+    PRIMARY KEY (categoryid)
+)ENGINE=INNODB;
+
+###TABEL FOR category DETAILS CREATED
+				
+CREATE TABLE PRODUCT(
+    productid INTEGER AUTO_INCREMENT,
+     productname  VARCHAR(500),
+    productdetails  VARCHAR(100),
+    productprice INTEGER NOT NULL,
+    productMRP  VARCHAR(100),
+    productqty VARCHAR(100), 
+    PRIMARY KEY (productid )
+)ENGINE=INNODB;
+
+###TABEL FOR STOCK DETAILS CREATED
+
+
+CREATE TABLE category(
+    stockid INTEGER AUTO_INCREMENT,
+     productid integer,
+     brandname VARCHAR(500),
+   stockstatus VARCHAR(100),
+    qty INTEGER,
+    stockrecived VARCHAR(100),
+    stocksend VARCHAR(100), 
+    PRIMARY KEY (stockid)
+)ENGINE=INNODB;
+
+
+
+###TABEL FOR BRAND DETAILS CREATED
+
+
+
+CREATE TABLE brand(
+    brandid INTEGER AUTO_INCREMENT,
+     productid integer,
+     brandname VARCHAR(500),
+    brandstatus VARCHAR(100),
+    totalqty INTEGER NOT NULL,
+    stockrecivedfrombrand VARCHAR(100),
+    returneditemtobrand VARCHAR(100),
+    pendingAMT VARCHAR(100),
+    totalbillamt VARCHAR(50),
+    PRIMARY KEY (brandid)
+)ENGINE=INNODB;
+
+
+###TABEL FOR BRAND DETAILS CREATED
+
+
+
+CREATE TABLE STAFF(
+    staffid INTEGER AUTO_INCREMENT,
+    staffname VARCHAR (50),
+    staffaddress VARCHAR(100),
+    mobileno varchar(50),
+    workingdept varchar(50),
+    satffsalary varchar(50),
+    accdetails varchar(50),
+    PRIMARY KEY (stafid)
+)ENGINE=INNODB;
+
+###TABEL FOR STAFF CREATED
+
+
+CREATE TABLE order_item(
+    orderid INTEGER AUTO_INCREMENT,
+    productid varchar(50),
+    orderdetails VARCHAR (50),
+    sellerdetails VARCHAR(100),
+    sellermobileno varchar(50),
+    ordercategery varchar(50),
+    ordervalue varchar(50),
+    paymentdetails varchar(50),
+    PRIMARY KEY ( orderid)
+)ENGINE=INNODB;
+
+### TABEL FOR ORDERED ITEMS
+
+CREATE TABLE customer(
+    cusfid INTEGER AUTO_INCREMENT,
+    cusname VARCHAR (50),
+    cusaddress VARCHAR(100),
+    cusmobileno varchar(50),
+    cusoldbills VARCHAR(50),
+    PRIMARY KEY (cusfid)
+)ENGINE=INNODB;
+### TABEL CREATED FOR CUSTOMER DETAILS
+
+CREATE TABLE orderdetails(
+    orderid1 INTEGER AUTO_INCREMENT,
+    productid varchar(50),
+    orderdetails VARCHAR (50),
+    customerdetails VARCHAR(100),
+    orderprice varchar(50),
+    ordervalue varchar(50),
+    discount varchar(50),
+    paymentdetails varchar(50),
+    invoice_no varchar(50),
+    PRIMARY KEY (orderid1)
+)ENGINE=INNODB;
+### TABEL CREATED FOR  ORDERDETAILS
+
+
+
+
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1854,"IBM","ACTIVE",184,250,25,"RS-8458","RS-10000");
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1855,"FLIPKART","ACTIVE",1824,2530,250,"RS-80458","RS-100000");
+
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1856,"AMAZON","ACTIVE",1894,250,25,"RS-84258","RS-105000");
+
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1857,"TESLA","ACTIVE",1584,2950,25,"RS-84158","RS-101000");
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1858,"LENOVO","ACTIVE",1849,2950,25,"RS-84508","RS-100000");
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1854,"IBM","ACTIVE",184,250,25,"RS-8458","RS-10000");
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1855,"FLIPKART","ACTIVE",1824,2530,250,"RS-80458","RS-100000");
+
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1856,"AMAZON","ACTIVE",1894,250,25,"RS-84258","RS-105000");
+
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1857,"TESLA","ACTIVE",1584,2950,25,"RS-84158","RS-101000");
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1858,"LENOVO","ACTIVE",1849,2950,25,"RS-84508","RS-100000");
+
+
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1854,"IBM","ACTIVE",184,250,25,"RS-8458","RS-10000");
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1855,"FLIPKART","ACTIVE",1824,2530,250,"RS-80458","RS-100000");
+
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1856,"AMAZON","ACTIVE",1894,250,25,"RS-84258","RS-105000");
+
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1857,"TESLA","ACTIVE",1584,2950,25,"RS-84158","RS-101000");
+INSERT INTO brand (productid,brandname,brandstatus,totalqty,stockrecivedfrombrand,returneditemtobrand,pendingAMT,totalbillamt) VALUES(1858,"LENOVO","ACTIVE",1849,2950,25,"RS-84508","RS-100000");
+
+
+### DATA ADDED IN BRAND TABEL
+
+
+
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("VIJAY","KURINJIPADI",827045222953,0);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("AJAY","CUDDALORE",9854845484,1);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("VIJAYAGANAPATHY","KURINJIPADI",82702229983,9);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("KAMAL","CHENNAI",994384518,85);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("VIJAYKUMAR","CUDDALORE",95843628549,08);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("HEMA","VILUPURAM",8465848714,0);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("VENNILA","PONDY",8617455184,10);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("JANANEE","CUDDALORE",8468132184,0);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("LIZZY","CUDDALORE",95684513514,0);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("ADI","VILUPURAM",8295222953,20);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("MONISHA","CUDDALORE",953438715,0);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("SATESH","CUDDALORE",864535845,50);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("SRINATH","CUDDALORE",9565864654,20);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("VIKY","CUDDALORE",96878514654,0);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("NISHA","CUDDALORE",8467845645,0);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("HEMA","CUDDALORE",98746468754,09);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("MAHA","EROADE",958468451,30);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("BARATHI","VADALUR",95846415,40);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("KERTHI","CUDDALORE",9584654515,50);
+INSERT INTO customer (cusname,cusaddress,cusmobileno,cusoldbills) VALUES("KUMAR","KURINJIPADI",98765464674,50);
+
+
+
+
+### ADDED CUSTOMER DETAILS IN TABEL 
+
+
+
+
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(1,"shipping address to be filled","customer details",1000,"12 items","-10%","cash","in9876");
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(2,"shipping address to be filled","customer details",5000,"85 items","-10%","cash","in9877");
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(3,"shipping address to be filled","customer details",10000,"120 items","-10%","cash","in9878");
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(4,"shipping address to be filled","customer details",100,"1 items","-10%","cash","in9879");
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(5,"shipping address to be filled","customer details",700,"13 items","-10%","cash","in98710");
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(6,"shipping address to be filled","customer details",956,"17 items","-10%","cash","in98711");
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(7,"shipping address to be filled","customer details",1152,"22 items","-10%","cash","in98712");
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(8,"shipping address to be filled","customer details",8549,"12 items","-10%","cash","in98713");
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(9,"shipping address to be filled","customer details",12,"1 items","-10%","cash","in98714");
+INSERT INTO orderdetails (productid,orderdetails,customerdetails,orderprice,ordervalue,discount,paymentdetails,invoice_no) VALUES(10,"shipping address to be filled","customer details",452,"2 items","-10%","cash","in98715");
+
+
+
+### ADDED DATA IN ORDERDETAILS
+
+
+
+
+
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","ARM DISTRIBUTER",85695565998,"MENS FASHION","500PCS","PAID");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","MR DISTRIBUTER",876487451,"WOMENS FASHION","500PCS","PAID");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","GOODS DISTRIBUTER",85695565998," FASHION","50PCS","FAILED");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","3ROSES",8764654354,"FOOD ITEMS","200PCS","PAID");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","POOMER DISTRIBUTER",6875468755,"MENS FASHION","50PCS","PAID");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","LENOVO",85695565998,"LAPTOPS","850PCS","ONHOLD");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","APPEL DISTRIBUTER",8549685421,"ELECTRICAL GOODS","70PCS","PAID");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","AR WHOLESELLER",85695565998,"FLOWER","50PCS","PAID");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","RM DIER CUDDALORE",85665998,"MENS FASHION","5620PCS","PAID");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","COMPUTER PARTS",8749846,"MOBILES","950PCS","PAID");
+INSERT INTO order_item (orderdetails,sellerdetails,sellermobileno,ordercategery,ordervalue,paymentdetails) VALUES ("shiping details","OPLJS SELLER",8569565998,"MENS FASHION","50PCS","PAID");
+
+
+
+### ADDED DATA IN ORDER_ITEM
+
+
+
+
+
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("VIJAY","KURINJIPADI",6874654874,"IT","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("AJAY","KURINJIPADI",6874654874,"IT","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("KAMAL","CUDDSALORE",6874654874,"SALES","1CR","BOI");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("VANILA","VADALORE",6874654874,"WORKSHOP","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("JANANEE","CUDDALORE",6874654874,"ADMIN","1CR","ICIC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("LIZY","THIRUCHI",6874654874,"IT","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("HEMA","PONDY",6874654874,"IT","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("KERTHI","KUNNUR",6874654874,"IT","1CR","SBI");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("KARTHI","KADAMBUR",6874654874,"IT","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("SRINATH","KALATHUR",6874654874,"IT","1CR","KOTACK");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("SATIESH","KUMBAKONAM",6874654874,"IT","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("SURIYA","CUDDALORE",6874654874,"IT","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("NISHA","MADRAS",6874654874,"IT","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("VIJAYKUMAR","CHENNAI",6874654874,"IT","1CR","HDFC");
+INSERT INTO staff (staffname,staffaddress,mobileno,workingdept,satffsalary,accdetails)VALUES("MOVIKA","USA",6874654874,"IT","1CR","HDFC");
+
+### ADDED DATA IN STAFF DETAILS
+
+
+
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("LAPTOPS","INSTOCK",105,"206","101");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("FLOWERS","OUTOFSTOCK",15,"26","01");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("FOOD ITEM","INSTOCK",15,"206","101");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("MALAR","INSTOCK",10565,"206","101");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("RISE","INSTOCK",1505,"206","1401");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("OIL","INSTOCK",105,"206","101");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("STICKER","OUTOFSTOCK",1543205,"206","1501");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("GROSERY","INSTOCK",10545,"206","1501");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("CHROMEBOOK","INSTOCK",105,"206","1601");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("LANDLINE","INSTOCK",1075,"266","1701");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("KEYBOARD","INSTOCK",15,"206","101");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("MEDISEN","INSTOCK",105,"20G6","101");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("MANDALA","INSTOCK",105,"206","1031");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("TABLETS","INSTOCK",15,"206","101");
+INSERT INTO stock (productname,stockstatus,qty,stockrecived,stocksend) VALUES("OOTHERPRODECTS","INSTOCK",105,"206","10R1");
+
+
+### ADDED STOCK DETAILS 
+
+
+UPDATE category SET categoryid=23 WHERE categoryid=1;
+
+### USED UPDATE QUERY ON CATEGERY TABEL TO RENAME 1 TO 23 ON CUSTOMERID
+
+CREATE TABEL SAMPEL(
+categoryid INTEGER AUTO_INCREMENT,
+    categoryname VARCHAR(500),
+    categorydescription VARCHAR(100), 
+    PRIMARY KEY (categoryid)
+)ENGINE=INNODB;
+
+
+##SAMPEL TABEL CREATED AND ADDED DOME VALT  FOR TRUNCATE 
+
+TRUNCATE TABLE sampel;
+
+## TRUNCATE DONE
+
+
+DROP TABLE sampel;
+
+## DROP TABEL DONE 
+
+DELETE FROM product WHERE product.productid = 1;
+DELETE FROM product WHERE product.productid = 2;
+DELETE FROM product WHERE product.productid = 3;
+DELETE FROM product WHERE product.productid = 4;
+DELETE FROM product WHERE product.productid = 5;
+DELETE FROM product WHERE product.productid = 6;
+DELETE FROM product WHERE product.productid = 7;
+DELETE FROM product WHERE product.productid = 8;
+DELETE FROM product WHERE product.productid = 9;
+DELETE FROM product WHERE product.productid = 10;
+DELETE FROM product WHERE product.productid = 11;
+DELETE FROM product WHERE product.productid = 12;
+DELETE FROM product WHERE product.productid = 13;
+DELETE FROM product WHERE product.productid = 14;
+DELETE FROM product WHERE product.productid = 15;
+DELETE FROM product WHERE product.productid = 16;
+DELETE FROM product WHERE product.productid = 17;
+DELETE FROM product WHERE product.productid = 18;
+
+
+### DELETED DATA FROM PRODUCT BY PRODUCT ID
+
+
+RENAME TABEL orderdetails TO stockorder
+
+
+### TABEL NAME RENAMED
+
+ALTER  TABLE order_item ADD(ADDRESS VARCHAR(20));
+
+### TABEL MODIFICATION DONE WITH ADDING ADDRESS COLUMN
+
+
+
+CREATE TABLE STORE(
+   STOREID1 INTEGER AUTO_INCREMENT,
+    STORENAME VARCHAR(500),
+    STORELOCATION VARCHAR(100), 
+    STOREOWENER VARCHAR(1010),
+    PRIMARY KEY (STOREID1)
+)ENGINE=INNODB;
+
+
+###ADDED ANOTHER ONE TABEL FOR STORELOCATOR
+
+
+INSERT INTO store (STORENAME,STORELOCATION,STOREOWENER) VALUE("VIJAYMART","CHENNAI","VIJAYAGANAPATHY");
+INSERT INTO store (STORENAME,STORELOCATION,STOREOWENER) VALUE("ARULVEERAN","CUDDALORE","ARULVEERAN");
+
+### ADDED STORE OWENER DETAILS IN TABEL
+
