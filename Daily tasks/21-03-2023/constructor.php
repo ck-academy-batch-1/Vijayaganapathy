@@ -1,17 +1,17 @@
 <?php
-class FNames {
-    private $name;
+class learn {
+    private $subj;
 
-    public function __construct ($name) {
-        $this -> name = $name; 
+    public function __construct ($subj) {
+        $this -> subj = $subj; 
     }
 
-    public function FamilyName () {
-        echo "My name is ". $this -> name[0]. "<br>";
-        echo "My friend name is ". $this -> name[1]. "<br>";
+    public function learnsubj () {
+        echo "iam learning subj is ". $this -> subj[0]. "<br>";
+        echo "My friend learning subj is ". $this -> subj[1]. "<br>";
     }
 }
 
-$my_family = new FNames (["vijay", "Ajay"]);
-$my_family->FamilyName (); 
+$my_sub = new learn (["PHP", "JAVA"]);
+$my_sub->learnsubj (); 
 ?>

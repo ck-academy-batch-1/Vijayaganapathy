@@ -1,21 +1,21 @@
 <?php
-class Family {
-    private $my_name;
+class learn {
+    private $cour;
     
-    private $father_name;
+    private $subje;
 
     public function __construct ($m, $f) {
-        $this->my_name = $m;
-        $this->father_name = $f;
+        $this->cour = $m;
+        $this->subje = $f;
     }
 
-    public function printFamilyName () {
-        echo "my name is " .$this->my_name."<br>";
-        echo "my father name is ".$this->father_name;
+    public function printlearnName () {
+        echo "my sonjoined in " .$this->cour."<br>";
+        echo "iam learning sub is ".$this->subje;
 
     }
 }
 
-$my_family = new Family("ajay", "siva");
-$my_family->printFamilyName(); 
+$my_learn = new learn("PHP", "JAVA");
+$my_learn->printlearnName(); 
 ?>

@@ -1,21 +1,21 @@
 <?php
-class famname {
-    public $mother;
+class newsubj {
+    public $SUB1;
 
-    public $father;
+    public $SUB2;
 
-    public function __construct ($m, $f) {
-        $this->mother = $m;
-        $this->father = $f;
+    public function __construct ($S1, $S2) {
+        $this->SUB1 = $S1;
+        $this->SUB2 = $S2;
     }
 }
 
-class myname extends famname {
-    public function FamilyName () {
-        echo "my mather name is  $this->mother <br> my father name is  $this->father <br>";
+class learn extends newsubj {
+    public function subjectname () {
+        echo "my SUB1 name is  $this->SUB1 <br> my SUB2 name is  $this->SUB2 <br>";
     }
 }
 
-$my_myname = new myname ("anathi", "jothi");
-$my_myname -> FamilyName (); 
+$my_learn = new learn ("php", "java");
+$my_learn -> subjectname (); 
 ?>

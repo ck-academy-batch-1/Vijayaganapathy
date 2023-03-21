@@ -1,16 +1,11 @@
 <?php
-class Family {
-    public $name;
-
-     function __construct ($name) {
-        $this -> name = $name;
-        echo "My name ". $this -> name. " is created<br>";
-    }
+class subj {
+    public $learning;
 
      function __destruct () {
-        echo "My name ". $this -> name. " is deleted<br>";
+        echo "My learning ". $this -> learning. " is deleted<br>";
     }
 }
 
-new Family ("vijay");
+new subj ("vijay");
 ?>

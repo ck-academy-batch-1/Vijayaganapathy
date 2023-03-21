@@ -1,12 +1,12 @@
 
 <?php
 trait use_me {
-    public $name1;
-    public $name2;
+    public $sub1;
+    public $sub2;
 
     public function __construct ($m, $f) {
-        $this->name1 = $m;
-        $this->name2 = $f;
+        $this->sub1 = $m;
+        $this->sub2 = $f;
     }
 }
 
@@ -16,25 +16,25 @@ trait use_me2 {
     }
 }
 
-class  name1 {
+class  sub1 {
     use use_me, use_me2;
 
-    public function FamilyName1 () {
-        echo "<h3>My Mather Name is   $this->name1  <br>  My Father Name is  $this->name2 <br>";
+    public function sub1 () {
+        echo "<h3>sub1  Name is   $this->sub1  <br>  sub2 Name is  $this->sub2 <br>";
     }
 }
 
-class  name2 {
+class  sub2 {
     use use_me;
 
-    public function FamilyName2 () {
-        echo "my sister name is $this->name1 <br> my brother name is  $this->name2 </h3><br>";
+    public function sub2 () {
+        echo "sun1 name is $this->sub1 <br> sub2 name is  $this->sub2 </h3><br>";
     }
 }
 
-$mom_dad = new name1 ("ananthi", "jothi");
-$mom_dad -> intro ();
-$mom_dad -> FamilyName1 (); 
-$sis_bro = new name2 ("anbu", "arul");
-$sis_bro -> FamilyName2 ();
+$COU23 = new sub1 ("PHP", "JAVA");
+$COU23 -> intro ();
+$COU23 -> sub1 (); 
+$COUR13 = new sub2 ("PYTHON", "JS");
+$COUR13 -> sub2 ();
 ?>
