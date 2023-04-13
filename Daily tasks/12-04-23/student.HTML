@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details in AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <style>
+        table {
+            width: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid rgb(7, 7, 7);
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ffffff;
+
+        }
+        button{
+        
+         font-weight: bold;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>STUDENT DETAILS IN AJAX</h1>
+    <form action="" method="get">
+        <label for="">CLICK BUTTON TO KNOW STUDENT DETAILS:</label>
+        <button type="button" onclick="student()">FETCH DETAILS BY jQUERY</button> 
+        <button type="button" onclick="student1()">FETCH DETAILS BY AJAX</button> 
+        <div id="studentdis"></div>  
+
+        <div id="detail"></div>
+    </form>
+
+    <script>
+       function student() {
+            $.get('studetails.php', function(data) {
+                $('#studentdis').html(data);
+            });
+       }
+       
+       function student1() {
+        var data = new XMLHttpRequest();
+        data.onload = function() {
+            if (xhr.status === 200) {
+                document.getElementById('detail').innerHTML = data.responseText;
+            }
+        };
+        data.open('GET', 'studetails.php', true);
+        xhr.send();
+    }
+
+    </script>
+</body>
+</html>
